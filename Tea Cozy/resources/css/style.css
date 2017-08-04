@@ -1,0 +1,136 @@
+html {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  font-family: helvetica;
+  font-size: 22px;
+  opacity: 0.9;
+  color: seashell;
+}
+
+li {
+  display: inline;
+  margin-left: 15px; /* I realize this could be done with another flexbox for the navigation list items by using "space-between" and dictating the total width. This just seemed easier, what is the best practice? */
+}
+
+a {
+  color: seashell;
+}
+
+.nav {
+  height: 69px;
+  width: 100%;
+  background-color: black;
+  top: 0;
+  position: fixed;
+  border-bottom: 1px solid seashell;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+
+.links {
+  margin-right: 25px; /* Not sure why I need this. The "s" in "Locations" just exits the screen on the far right if I do not add this margin. */
+}
+
+.nav img {
+  height: 50px;
+  margin-left: 10px;
+}
+
+.mission {
+  margin: auto;
+  height: 700px;
+  max-width: 1200px;
+  background-image: url("../images/img-mission-background.jpg");
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+.blackbar {
+  background-color: black;
+  width: 100%;
+  max-height: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.missiontext {
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.products {
+  padding: 50px 0px;
+  margin: auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.month {
+  width: 100%;
+  text-align: center;
+}
+
+.box {
+  max-height: 240px;
+  max-width: 300px;
+  margin: 10px;
+  text-align: center;
+}
+
+.box h4 { /* Can I solve this more smoothly somehow? */
+  margin-top: 10px;
+}
+
+.locations {
+  margin: auto;
+  min-height: 500px;
+  max-width: 1200px;
+  background-image: url("../images/img-locations-background.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.txtbox {
+  width: 100%;
+  text-align: center;
+}
+
+.blkbox {
+  flex-basis: 300px;
+  background-color: black;
+  opacity: 1;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 5px;
+}
+
+.contact {
+  max-height: 200px;
+  width: 100%;
+  text-align: center;
+
+}
+
+footer {
+  text-align: left;
+  margin: 20px;
+}
